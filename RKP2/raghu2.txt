@@ -1,1 +1,119 @@
 This my Second File
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2 (master)
+$ git init
+Initialized empty Git repository in C:/Users/MCALAB-03/Desktop/RKP2/.git/
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2 (master)
+$ git config --global user.name "Raghu2"
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2 (master)
+$ git config --global user.email "raghupattar14@gmail.com"
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2 (master)
+$ mkdir RKP2
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2 (master)
+$ cd RKP2
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ echo "This my Second File"
+This my Second File
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ echo "This my Second File" >raghu2.txt
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git add .
+warning: in the working copy of 'RKP2/raghu2.txt', LF will be replaced by CRLF the next time Git touches it
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   raghu2.txt
+
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git commit -m "My Second file is Rady"
+[master (root-commit) bd51528] My Second file is Rady
+ 1 file changed, 1 insertion(+)
+ create mode 100644 RKP2/raghu2.txt
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git branch
+* master
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git branch F5
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git branch
+  F5
+* master
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (master)
+$ git checkout F5
+Switched to branch 'F5'
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git branch
+* F5
+  master
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git commit -m "Branch is Crated"
+On branch F5
+nothing to commit, working tree clean
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git push -u origin https://github.com/raghupattar18/RAGHUGET2.git
+fatal: invalid refspec 'https://github.com/raghupattar18/RAGHUGET2.git'
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git push -u origin https://github.com/raghupattar18/RAGHUGET2.git
+fatal: invalid refspec 'https://github.com/raghupattar18/RAGHUGET2.git'
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git remote -v
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git remote add origin https://github.com/raghupattar18/RAGHUGET2.git
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git remote -v
+origin  https://github.com/raghupattar18/RAGHUGET2.git (fetch)
+origin  https://github.com/raghupattar18/RAGHUGET2.git (push)
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git push -u origin F5
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 286 bytes | 286.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/raghupattar18/RAGHUGET2.git
+ * [new branch]      F5 -> F5
+branch 'F5' set up to track 'origin/F5'.
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git merge F5
+Already up to date.
+
+MCALAB-03@DESKTOP-EQ2A1VF UCRT64 ~/Desktop/RKP2/RKP2 (F5)
+$ git pull
+Already up to date.
